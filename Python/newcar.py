@@ -22,7 +22,7 @@ class Car:
         # Load Car Sprite and Rotate
         # Convert Speeds Up A Lot
         self.sprite = pygame.image\
-            .load(r'C:\Users\reshi\Desktop\Reshi Adavan\ECs\Projects\GitHub\AI\AI-Car-Sim\Photos\car.png').convert()
+            .load(r'{Directory of the PNG of your car here}').convert()
         self.sprite = pygame.transform.scale(self.sprite, (CAR_SIZE_X, CAR_SIZE_Y))
         self.rotated_sprite = self.sprite
 
@@ -177,7 +177,7 @@ def run_simulation(genomes, config):
     alive_font = pygame.font.SysFont("Montserrat", 20)
     # Convert Speeds Up A Lot
     game_map = pygame.image.\
-        load(r'C:\Users\reshi\Desktop\Reshi Adavan\ECs\Projects\GitHub\AI\AI-Car-Sim\Photos\map3.png').convert()
+        load(r'{Directory of the image of the map here}').convert()
 
     global current_generation
     current_generation += 1
@@ -244,7 +244,7 @@ def run_simulation(genomes, config):
 
 if __name__ == "__main__":
     # Load Config
-    config_path = r"C:\Users\reshi\Desktop\Reshi Adavan\ECs\Projects\GitHub\AI\AI-Car-Sim\Configs\config.txt"
+    config_path = r"{Directory of the config file}"
     config = neat.config.Config(neat.DefaultGenome,
                                 neat.DefaultReproduction,
                                 neat.DefaultSpeciesSet,
